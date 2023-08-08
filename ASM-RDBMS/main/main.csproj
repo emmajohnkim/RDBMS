@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.0.31" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\srcode\Persistence\Persistence.csproj" />
+    <ProjectReference Include="..\srcode\PL_Console\PL_Console.csproj" />
+    <ProjectReference Include="..\srcode\BL\BL.csproj" />
+    <ProjectReference Include="..\srcode\DAL\DAL.csproj" />
+    <ProjectReference Include="PL_Console\PL_Console.csproj" />
+  </ItemGroup>
+
+</Project>
